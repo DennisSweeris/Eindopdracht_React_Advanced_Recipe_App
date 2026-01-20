@@ -1,7 +1,5 @@
-import { Heading } from '@chakra-ui/react';
+import { Heading } from "@chakra-ui/react";
 
 export const EventsPage = () => {
-    return (
-        <Heading>List of events</Heading>
-    );
+	return <Heading>List of events</Heading>;
 };
