@@ -3,18 +3,27 @@
     {
       "id": 1,
       "name": "Michael Turner",
-      "image": "https://wincacademy.github.io/webpages/media/person6.jpeg"
+      "image": "https://wincacademy.github.io/webpages/media/person6.jpeg",
+      "role": "user"
     },
     {
       "id": 2,
       "name": "Sophia Collins",
-      "image": "https://wincacademy.github.io/webpages/media/article-author.png"
+      "image": "https://wincacademy.github.io/webpages/media/article-author.png",
+      "role": "user"
     },
-	{
+    {
       "id": 3,
       "name": "Emily Carter",
-      "image": "https://wincacademy.github.io/webpages/media/person9.jpeg"
-	}
+      "image": "https://wincacademy.github.io/webpages/media/person9.jpeg",
+      "role": "user"
+    },
+    {
+      "id": 99,
+      "name": "Admin",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7TKHo1NrGHSRkso1dt1oE04qoPOGEKCiUA&s",
+      "role": "admin"
+    }
   ],
   "events": [
     {
@@ -31,17 +40,17 @@
       "endTime": "2023-03-10T19:00:00.000Z"
     },
     {
-      "id": 2,
-      "createdBy": 1,
       "title": "Laser Tag mania",
       "description": "Let's play laser tag!",
-      "image": "https://wincacademy.github.io/webpages/media/lasertag.jpg",
+      "location": "Blinded by the Lights Laser Tag, 15 Main St.",
+      "startTime": "2023-04-06T19:46",
+      "endTime": "2023-04-06T20:46",
       "categoryIds": [
         2
       ],
-      "location": "Blinded by the Lights Laser Tag, 15 Main St.",
-      "startTime": "2023-04-06T17:46:00.000Z",
-      "endTime": "2023-04-06T18:46:00.000Z"
+      "image": "https://wincacademy.github.io/webpages/media/lasertag.jpg",
+      "createdBy": 1,
+      "id": 2
     },
     {
       "id": 3,
@@ -85,7 +94,7 @@
     },
     {
       "id": 6,
-      "createdBy": 5,
+      "createdBy": 3,
       "title": "Board games night",
       "description": "Roll the dice and join the fun!",
       "image": "https://wincacademy.github.io/webpages/media/pexels-tima-miroshnichenko-6598746.jpg",
@@ -111,7 +120,7 @@
     },
     {
       "id": 8,
-      "createdBy": 6,
+      "createdBy": 1,
       "title": "Nature walk",
       "description": "Connect with nature and clear your mind.",
       "image": "https://wincacademy.github.io/webpages/media/hiking.png",
@@ -122,18 +131,48 @@
       "startTime": "2023-03-16T07:00:00.000Z",
       "endTime": "2023-03-16T09:30:00.000Z"
     },
-	{
+    {
       "id": 9,
       "createdBy": 3,
       "title": "Bowling night",
       "description": "Strike up some fun with friends at the lanes!",
       "image": "https://wincacademy.github.io/webpages/media/pexels-rnnzeravac-9273055.jpg",
-      "categoryIds": [2],
+      "categoryIds": [
+        2
+      ],
       "location": "Downtown Bowling Alley",
       "startTime": "2023-03-19T18:00:00.000Z",
       "endTime": "2023-03-19T21:00:00.000Z"
-	}
-	
+    },
+    {
+      "title": "Lange Tekst Event",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas sed urna et ornare. Nunc est neque, faucibus ut volutpat ut, dignissim ac ex. Nam malesuada, velit eu faucibus placerat, \n\nligula nisi hendrerit libero, et venenatis erat velit ac ipsum. Integer quis eleifend velit. Integer finibus commodo volutpat. Vestibulum eros dolor, rhoncus non lorem non, tincidunt volutpat turpis. Etiam porta, nunc fermentum commodo pulvinar, ligula erat consectetur libero, a ultricies nulla quam ultrices nibh. Nunc rutrum ante libero, a accumsan lectus vulputate id. Proin eget metus non odio volutpat imperdiet sed vel odio.\n\nPhasellus tristique sem eu ultrices feugiat. Etiam quis ultrices mi. Pellentesque eu tincidunt neque, nec interdum felis. Curabitur accumsan sit amet mi vitae venenatis. Duis vel porta nisl. Nullam massa velit, fringilla blandit vehicula in, ornare sed lorem. In eget neque et neque pharetra malesuada id at neque. Nullam molestie libero nec ex facilisis, nec efficitur ligula imperdiet. Nunc ligula turpis, congue elementum nisi at, vehicula hendrerit risus.\n\nMorbi ut lorem condimentum, cursus arcu quis, mollis enim. Fusce egestas nibh sed orci vehicula, elementum ultrices massa pulvinar. Integer accumsan, augue eget malesuada faucibus, dui ex vehicula elit, non vulputate est lacus eget orci. Etiam in velit hendrerit, gravida nisi sed, aliquam velit. Nam pulvinar elit est, vitae aliquet augue ornare imperdiet. Donec molestie risus vitae erat pellentesque, eget interdum quam commodo. Suspendisse blandit ante eu pharetra egestas. Vestibulum efficitur massa vitae tortor sodales malesuada. Vestibulum in diam vestibulum diam aliquet ornare. Nunc ut interdum metus.\n\nIn dapibus orci in enim tincidunt pretium. Cras eleifend lectus et vulputate sodales. Donec eros nisi, semper ac rhoncus vitae, scelerisque eu leo. Proin arcu nisi, varius sed est quis, ullamcorper dictum velit. Nunc sed nisi diam. Phasellus eu augue eu urna congue aliquam. Nam eu sapien auctor, bibendum risus ut, imperdiet ex. Praesent malesuada volutpat sapien nec efficitur. Nam sit amet accumsan lorem. Mauris ullamcorper rutrum lectus ac cursus. Quisque pharetra lacus at sodales venenatis. Nullam ut maximus ligula. Fusce in aliquam tellus, a rutrum mi. Donec id ligula ipsum.\n\nIn ac finibus lorem. Nulla quam lectus, faucibus eu pharetra feugiat, venenatis et enim. Aliquam fringilla dignissim tincidunt. Integer at consequat dui. Curabitur molestie tortor id luctus hendrerit. Aliquam ligula nisi, tincidunt in tincidunt vitae, faucibus eu velit. Donec blandit viverra sem, ut auctor nulla. Pellentesque eget purus tincidunt, ullamcorper orci sit amet, lobortis lacus. Sed finibus urna quam. Aenean vitae gravida nisl, id consectetur urna. Pellentesque bibendum metus ac ex fermentum efficitur. Pellentesque venenatis ligula nulla, non lacinia odio facilisis quis. Morbi elit nisl, dictum sed volutpat non, laoreet non odio.",
+      "location": "Rotterdam",
+      "startTime": "2026-01-27T13:44",
+      "endTime": "2026-02-28T13:44",
+      "categoryIds": [
+        4,
+        3,
+        2
+      ],
+      "image": "https://dierpedia.nl/wp-content/uploads/2021/03/beren-dierpedia-780x400.jpg",
+      "createdBy": 1,
+      "id": 11
+    },
+    {
+      "title": "Evenement met een hele lange titel welke als het goed is netjes word afgekapt.",
+      "description": "Gezellig starten naar tekst op het scherm",
+      "location": "Jouw eigen huis",
+      "startTime": "2026-02-28T00:00",
+      "endTime": "2026-03-01T00:00",
+      "categoryIds": [
+        1,
+        2
+      ],
+      "image": "https://test.com/nietzien.jpg",
+      "createdBy": 3,
+      "id": 12
+    }
   ],
   "categories": [
     {
@@ -147,6 +186,10 @@
     {
       "name": "relaxation",
       "id": 3
+    },
+    {
+      "name": "other",
+      "id": 4
     }
   ]
 }
